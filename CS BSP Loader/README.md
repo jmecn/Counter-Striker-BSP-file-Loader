@@ -1,6 +1,6 @@
-# ²Î¿¼×ÊÁÏ
+# å‚è€ƒèµ„æ–™
 
 * [wtrsltnk/game-assets](https://github.com/wtrsltnk/game-assets)
 Collection of loaders for game engine asset types. Currently supported: Half-Life BSP, MDL and SPR.
 
-* [Counter Striker BSP MAP ·ÖÎö](http://www.doc88.com/p-849811780551.html)
+* [Counter Striker BSP MAP åˆ†æ](http://www.doc88.com/p-849811780551.html)
