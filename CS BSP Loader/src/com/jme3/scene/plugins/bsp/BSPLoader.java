@@ -243,18 +243,20 @@ public class BSPLoader implements AssetLoader {
 	private void readTextures() throws IOException {
 
 		buffer.position(lumps[kTextures].offset);
-		int num = lumps[kTextures].length / (64 + 2 * 4);
+		int num = lumps[kTextures].length / (16 + 2 * 4);
 		logger.info(lumps[kTextures] + "there are " + num + " textures");
 
-		byte[] ca = new byte[64];
+		byte[] ca = new byte[16];
 		textures = new String[num];
 		for (int i = 0; i < num; i++) {
 			readFully(ca);
-			readInt();
-			readInt();
 			String s = new String(ca);
-			s = s.substring(0, s.indexOf(0));
+			readInt();
+			readInt();
+			//s = s.substring(0, s.indexOf(0));
 			textures[i] = s;
+			
+			logger.info(s);
 		}
 	}
 
